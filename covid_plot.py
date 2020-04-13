@@ -23,6 +23,7 @@ print("------The worst affected country plot-USA------")
 plt.figure()
 plt.plot(x,total_c['United States'])
 plt.title("USA Total detected vs Time")
+plt.show()
 
 
 y=[]
@@ -33,7 +34,7 @@ y.append(0)
 plt.figure()
 plt.title("USA new cases vs previous cases")
 plt.plot(total_c['United States'],y,'ro')
-
+plt.show()
 
 #USA_ratio=0.0
 #for i in range(0,len(total_c['United States'])):
@@ -44,6 +45,7 @@ print("-------Origin country plot- CHINA-------")
 plt.figure()
 plt.title("CHINA total detected vs time")
 plt.plot(x,total_c['China'])
+plt.show()
 
 y1=[]
 for i in range(0,len(total_c['China'])-1):
@@ -52,12 +54,14 @@ y1.append(0)
 plt.figure()
 plt.title("CHINA new case vs previous case")
 plt.plot(total_c['China'],y1,'ro')
+plt.show()
 
 
 print("-----Next Most populous country- INDIA ------")
 plt.figure()
 plt.title("India Total detected vs time")
 plt.plot(x,total_c['India'])
+plt.show()
 
 plt.figure()
 plt.title("India new cases vs previous cases")
@@ -67,6 +71,7 @@ for i in range(0,len(total_c['India'])-1):
     y2.append(total_c['India'][i+1]-total_c['India'][i])
 y2.append(0)
 plt.plot(total_c['India'],y2,'ro')
+plt.show()
 
 print(len(y2))
 print(len(total_c['India']))
